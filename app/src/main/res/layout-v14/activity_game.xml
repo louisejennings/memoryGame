@@ -1,0 +1,107 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ljennings.memorygame.GameActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Score:"
+        android:id="@+id/textScore"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Level: "
+        android:id="@+id/textDifficulty"
+        android:layout_below="@+id/textScore"
+        android:layout_centerHorizontal="true" />
+    <Spinner
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:id="@+id/buttonReplay"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textDifficulty"
+        android:layout_above="@+id/buttonReplay">
+
+        <ImageButton
+            android:id="@+id/dog"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/dog"
+            android:background="#ff2fa0ff"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/cat"
+            android:src="@drawable/cat"
+            android:background="#f2c668"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_above="@+id/buttonReplay" />
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/cow"
+            android:layout_below="@+id/pig"
+            android:layout_alignLeft="@+id/cat"
+            android:layout_alignStart="@+id/cat"
+            android:src="@drawable/cow"
+            android:background="#941C59"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/pig"
+            android:src="@drawable/pig"
+            android:background="#9de866"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_alignBottom="@+id/buttonReplay"
+            android:layout_toLeftOf="@+id/buttonReplay"
+            android:layout_toStartOf="@+id/buttonReplay" />
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:id="@+id/Restart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

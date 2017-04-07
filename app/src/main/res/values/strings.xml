@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MemoryGame</string>
+
+    <string name="PLAY">PLAY</string>
+    <string name="Score">"Score: "</string>
+    <string name="Level">"Level: "</string>
+    <string name="Button1">1</string>
+    <string name="Button2">2</string>
+    <string name="Button3">3</string>
+    <string name="Button4">4</string>
+    <string name="ButtonReplay">Start Over</string>
+    <string name="High_Score">High Score</string>
+
+    <string-array name="Difficulty">
+        <item>easy</item>
+        <item>hard</item>
+    </string-array>
+    <string name="title_activity_score">Score</string>
+    <string name="title_activity_canvas">Canvas</string>
+
+
+</resources>
